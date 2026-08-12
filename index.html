@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Set the document title to the name of your application -->
+    <title>Jurex — Gestão de Empréstimos Pessoais</title>
+    <meta name="description" content="Controle total de empréstimos P2P: clientes, contratos, parcelas, juros e relatórios em um app fintech moderno.">
+    <meta name="author" content="Jurex">
+    <meta name="theme-color" content="#00FF88">
+    <link rel="icon" type="image/png" href="../Logo-jurex-nobg.png">
+    <script src="../../challenges.cloudflare.com/turnstile/v0/g/aae2b9a1c261/81O7KRo6YN5U.js" async="" defer=""></script>
+
+    <meta property="og:title" content="Jurex — Gestão de Empréstimos">
+    <meta property="og:description" content="Controle total de empréstimos P2P em um app fintech moderno.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../lovable.dev/EMFH8OccFQm1.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Lovable">
+    <meta name="twitter:image" content="https://lovable.dev/EMFH8OccFQm1.png">
+
+    <!-- PWA -->
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Jurex">
+    <script type="module" crossorigin="" src="../assets/index-DzabtkAt.js"></script>
+    <link rel="stylesheet" crossorigin="" href="../assets/index-CuBXngeZ.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Após um novo deploy, uma aba que já estava aberta pode tentar carregar
+      // um arquivo JS com hash antigo que não existe mais no servidor — o
+      // Vercel devolve index.html (rewrite de SPA) no lugar, e o navegador
+      // rejeita por MIME type errado, deixando a tela em branco. Detecta essa
+      // falha de carregamento de script e recarrega a página uma única vez
+      // (a flag evita loop caso o problema seja outro).
+      (function () {
+        var KEY = "jurex-reload-on-script-error";
+        window.addEventListener(
+          "error",
+          function (event) {
+            if (event.target && event.target.tagName === "SCRIPT" && !sessionStorage.getItem(KEY)) {
+              sessionStorage.setItem(KEY, "1");
+              window.location.reload();
+            }
+          },
+          true
+        );
+      })();
+    </script>
+  
+
+</body></html>
